@@ -37,7 +37,7 @@ async def on_message(message):
     guild_id = message.guild.id
 
     # init guild data
-    guild_words.setdefault(guild_id, ["idiot", "stupid"])
+    guild_words.setdefault(guild_id, ["idiot", "stupid", "dumb", "hate"])
     guild_warnings.setdefault(guild_id, {})
     guild_timeouts.setdefault(guild_id, {})
 
