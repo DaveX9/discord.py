@@ -7,10 +7,10 @@ import os
 # ===== LOAD ENV =====
 load_dotenv()
 TOKEN = os.getenv("TOKEN")
+print("TOKEN =", TOKEN)
 
 if TOKEN is None:
     raise ValueError("Token not found in .env file")
-
 # ================= INTENTS =================
 intents = discord.Intents.default()
 intents.message_content = True
